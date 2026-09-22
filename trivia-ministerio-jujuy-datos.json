@@ -1,0 +1,674 @@
+{
+  "version": 1,
+  "contentVersion": 2,
+  "pin": "6789",
+  "prizeMessage": "¡Mostrá esta pantalla en el stand del Ministerio de Desarrollo Económico y Producción para retirar tu premio sorpresa! 🎁",
+  "winThreshold": 3,
+  "timerEnabled": true,
+  "timerSeconds": 25,
+  "plays": [],
+  "categories": [
+    {
+      "id": "agencia-comercializacion",
+      "name": "Agencia de Comercialización",
+      "icon": "🛒",
+      "color": "#FF9F1C",
+      "enabled": true,
+      "questions": [
+        {
+          "q": "Cuál es el objetivo principal del Sello de Origen, JUJUY ENERGÍA VIVA?",
+          "options": [
+            "Identificar, posicionar y promover la producción de Jujuy",
+            "Aumentar los impuestos.",
+            "Regular los precios de los productos."
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "Considera que la participación en “Ferias Nacionales e Internacionales” posibilita a los emprendedores jujeños a:",
+          "options": [
+            "Todas las anteriores.",
+            "Posicionar sus productos a nivel nacional e internacional.",
+            "Apertura a nuevos mercados."
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué tipo de capacitaciones podés encontrar en la Escuela de DesarrolloEconómico y Productivo (EDEP)?",
+          "options": [
+            "Solo cursos de marketing.",
+            "Solo cursos de administración.",
+            "C) Marketing, administración, financiamiento, formulación de proyectos y más."
+          ],
+          "correct": [
+            2
+          ]
+        },
+        {
+          "q": "Quiénes pueden acceder a las capacitaciones de la Escuela de Desarrollo Económico y Productivo? (EDEP)",
+          "options": [
+            "Solamente personas que ya tienen un emprendimiento.",
+            "Solamente empresas formalizadas.",
+            "Emprendedores, comerciantes, empresarios y personas interesadas en capacitarse."
+          ],
+          "correct": [
+            2
+          ]
+        },
+        {
+          "q": "¿Cuáles son los productos más exportados de Jujuy?",
+          "options": [
+            "Litio y metalífero.",
+            "Tabaco y azúcar.",
+            "Litio, metalífero, azúcar, cítricos y legumbres"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿De qué manera pensás que el Ministerio de Desarrollo Económico y Producción acompaña a las empresas en su proceso de exportación?",
+          "options": [
+            "Facilita los contactos con los agentes que intervienen.",
+            "Brinda capacitaciones y asistencia técnica.",
+            "Todas las anteriores."
+          ],
+          "correct": [
+            2
+          ]
+        },
+        {
+          "q": "Sabías que existe en el Ministerio de Desarrollo Económico y Producción elConsultorio PyME? ¿Para qué pensás que sirve?",
+          "options": [
+            "Para conocer el estado actual de tu empresa y obtener un diagnóstico integral de lamisma y detectar áreas de mejora y oportunidades.",
+            "Para brindar líneas de financiamiento productivo.",
+            "Para tramitar habilitaciones comerciales obligatorias para nuevos emprendimientos."
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué identifica el Sello de Origen, JUJUY ENERGÍA VIVA?",
+          "options": [
+            "Solamente empresas multinacionales.",
+            "Productos importados.",
+            "Productos y servicios vinculados a la producción jujeña."
+          ],
+          "correct": [
+            2
+          ]
+        },
+        {
+          "q": "¿Dónde se registra una marca en Argentina?",
+          "options": [
+            "ARCA",
+            "RENTAS",
+            " Instituto Nacional de la Propiedad Industrial (INPI)."
+          ],
+          "correct": [
+            2
+          ]
+        },
+        {
+          "q": "1)\t¿Qué es una marca?",
+          "options": [
+            "Un permiso municipal",
+            "Un signo que permite identificar y distinguir productos o servicios.",
+            " Un código de barras."
+          ],
+          "correct": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vitivinicultura",
+      "name": "Vitivinicultura",
+      "icon": "🍷",
+      "color": "#7B2CBF",
+      "enabled": true,
+      "questions": [
+        {
+          "q": "¿Qué se produce principalmente en una bodega?",
+          "options": [
+            "Vino",
+            "Cerámica",
+            "Software"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Cómo se llama la actividad de cultivar vid para producir vino?",
+          "options": [
+            "Viticultura",
+            "Apicultura",
+            "Avicultura"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué caracteriza a los llamados 'vinos de altura'?",
+          "options": [
+            "Se cultivan a gran altitud sobre el nivel del mar",
+            "Se guardan en edificios altos",
+            "No llevan uvas"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué es la vendimia?",
+          "options": [
+            "La cosecha de la uva",
+            "La poda de invierno",
+            "El etiquetado de la botella"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué factor climático favorece la vitivinicultura de altura en el norte argentino?",
+          "options": [
+            "La amplitud térmica entre el día y la noche",
+            "La humedad constante",
+            "La cercanía al mar"
+          ],
+          "correct": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parques-industriales",
+      "name": "Parques Industriales",
+      "icon": "🏭",
+      "color": "#EF476F",
+      "enabled": true,
+      "questions": [
+        {
+          "q": "¿Se puede registrar cualquier rubro en el portal de empleo?",
+          "options": [
+            "Si se puede",
+            "No, solo se puede registrar empresas que prestan servicios al Estado. ",
+            "El rubro lo selecciona la página. "
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Cuántos puestos se pueden publicar por empresa?",
+          "options": [
+            "El límite es de 10 puestos por empresa.",
+            "Es liimtado",
+            "Se solicita autorización por empresa."
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿El portal cuenta con alguna capacitación?",
+          "options": [
+            "Sí, se hicieron tres capacitaciones.",
+            "Solo si se solicita.",
+            "No, el portal no ofrece capacitaciones, solo información sobre empleo."
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": ")¿Cuál es la principal función de proveedores mineros?",
+          "options": [
+            "La principal función es satisfacer las necesidades de los productores",
+            "Un club de fútbol",
+            "ontrolar y fiscalizar las empresas mineras de la provincia"
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿Qué es un proveedor minero?",
+          "options": [
+            "Es una persona, empresa o emprendimiento que vende productos o presta servicios quelas empresas mineras necesita.",
+            "Es un organismo estatal que controla y regula toda la actividad minera.",
+            "Es una persona que descubre y registra nuevos yacimientos minerales."
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "Cuántos Parques Industriales existen formalmente reconocidos en la Provincia de Jujuy?",
+          "options": [
+            "3 Parques Industriales.",
+            "5 Parques Industriales",
+            "Solo 2 Parques Industriales (Perico y Ledesma)."
+          ],
+          "correct": [
+            2
+          ]
+        },
+        {
+          "q": "¿Cuál es la principal diferencia regulatoria entre un Parque Industrial y un AgrupamientoIndustrial en Argentina?",
+          "options": [
+            "La cantidad de empresas.",
+            "La inscripción oficial en el Registro Nacional de Parques Industriales (RENPI) y elcumplimiento de infraestructura exigida.",
+            "El número de empleados totales que trabajan en el predio."
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿En qué departamento de la provincia se sitúa el Parque Industrial de Perico?",
+          "options": [
+            "Departamento El Carmen.",
+            "Departamento Ledesma.",
+            "Departamento San Pedro"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "Cuál es el principal mineral extraído en los salares de la Puna jujeña que posiciona a laprovincia en el mapa global de la transición energética?",
+          "options": [
+            "Cobre",
+            "Litio",
+            "Bauxita"
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "Además del azúcar, ¿qué otro derivado industrial de gran importancia produce laindustria cañera en Jujuy?",
+          "options": [
+            "Plásticos sintéticos derivado de petróleo.",
+            "Bioetanol para corte de combustibles y papel de fibra de caña",
+            "Fertilizantes fosfatados sintéticos."
+          ],
+          "correct": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "servicios-conocimiento",
+      "name": "Servicios Basados en el Conocimiento",
+      "icon": "💡",
+      "color": "#06D6A0",
+      "enabled": true,
+      "questions": [
+        {
+          "q": "¿Qué se busca fortalecer con políticas de innovación y conocimiento?",
+          "options": [
+            "Nuevas capacidades técnicas y tecnológicas",
+            "Solo el turismo",
+            "Nada en particular"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué es la capacitación laboral?",
+          "options": [
+            "Formación para mejorar habilidades de trabajo",
+            "Un tipo de multa",
+            "Un día feriado"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué rol cumplen las universidades en el desarrollo productivo?",
+          "options": [
+            "Generan conocimiento e investigación aplicada",
+            "Ninguno",
+            "Solo entregan diplomas"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué es un polo o parque tecnológico?",
+          "options": [
+            "Un espacio que reúne empresas e instituciones de innovación",
+            "Un tipo de helado",
+            "Una plaza pública"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Por qué es importante la transferencia de conocimiento a las empresas?",
+          "options": [
+            "Porque mejora su competitividad",
+            "Porque es solo un trámite",
+            "No es importante"
+          ],
+          "correct": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zona-franca",
+      "name": "Zona Franca",
+      "icon": "🌐",
+      "color": "#118AB2",
+      "enabled": true,
+      "questions": []
+    },
+    {
+      "id": "jemse",
+      "name": "Jemse",
+      "icon": "⚙️",
+      "color": "#E76F51",
+      "enabled": true,
+      "questions": []
+    },
+    {
+      "id": "desarrollo-productivo",
+      "name": "Secretaría de Desarrollo Productivo",
+      "icon": "📈",
+      "color": "#2EC4B6",
+      "enabled": true,
+      "questions": []
+    },
+    {
+      "id": "ley-inversiones",
+      "name": "Ley de Inversiones",
+      "icon": "📜",
+      "color": "#8338EC",
+      "enabled": true,
+      "questions": []
+    },
+    {
+      "id": "fogajuy",
+      "name": "FOGAJUY",
+      "icon": "💰",
+      "color": "#FFB703",
+      "enabled": true,
+      "questions": []
+    },
+    {
+      "id": "consejo-microempresa",
+      "name": "Consejo de la Microempresa",
+      "icon": "🛍️",
+      "color": "#FB5607",
+      "enabled": true,
+      "questions": [
+        {
+          "q": "¿Qué caracteriza a una microempresa?",
+          "options": [
+            "Pocos empleados y facturación reducida",
+            "Miles de empleados",
+            "Cotizar en bolsa"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué es el monotributo?",
+          "options": [
+            "Un régimen impositivo simplificado para pequeños contribuyentes",
+            "Un tipo de préstamo bancario",
+            "Un día feriado"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué suele necesitar más una microempresa para crecer?",
+          "options": [
+            "Financiamiento y capacitación",
+            "Solo publicidad en TV",
+            "Nada en especial"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué significa 'emprendedurismo'?",
+          "options": [
+            "La capacidad de iniciar y desarrollar un proyecto propio",
+            "Un cargo público",
+            "Un tipo de impuesto"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué es un plan de negocios?",
+          "options": [
+            "Un documento que planifica cómo funcionará un emprendimiento",
+            "Un contrato de alquiler",
+            "Una factura"
+          ],
+          "correct": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "defensa-consumidor",
+      "name": "Defensa del Consumidor",
+      "icon": "⚖️",
+      "color": "#3A86FF",
+      "enabled": true,
+      "questions": [
+        {
+          "q": "¿Puedo renunciar a mis derechos como consumidor?",
+          "options": [
+            "Sí, siempre que se firme un acuerdo de partes ante escribano.",
+            "No se pueden renunciar a los derechos.",
+            "Sí, únicamente cuando se adquieren productos en liquidación o rebaja"
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "•\t¿De cuánto es el plazo de garantía respecto de un objeto nuevo?",
+          "options": [
+            "El plazo es de 6 meses",
+            "El plazo es de 3 meses.",
+            "ARCA"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "•\t¿Cuánto tiempo tengo para poder ejercer el derecho de arrepentimiento?",
+          "options": [
+            "El plazo de 10 días corridos.",
+            "El plazo de 48 horas hábiles.",
+            "El plazo de 30 días corridos"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Debo pagar los gastos de envío en la devolución de un producto?",
+          "options": [
+            "Productos importados",
+            "No, son a cargo del proveedor.",
+            "Solamente empresas multinacionales."
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿Puedo dar de baja un servicio contratado por internet?",
+          "options": [
+            "Sí",
+            "No, solo se puede dar de baja de manera presencial en la sucursal.",
+            "Solo si el contrato inicial se firmó de forma presencial."
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Si solicito la baja que debe hacer el proveedor?",
+          "options": [
+            "Responder en un plazo de 72 horas con una nueva oferta para retener al cliente.",
+            "En el plazo de 24 horas enviar un código de identificación de baja.",
+            "Enviar un formulario impreso por correo postal dentro de los 5 días hábiles."
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "Cuántas denuncias ingresaron en defensa del consumidor en el año 2025?",
+          "options": [
+            "3982 denuncias.",
+            "1540 denuncias.",
+            "6750 denuncias."
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "Se cobra algún cargo por realizar la denuncia en defensa del consumidor?",
+          "options": [
+            "Sí, se cobra una tasa administrativa fija de apertura de expediente.",
+            "No, es totalmente gratuito.",
+            "Sí, únicamente si el reclamo supera un monto mínimo en dinero."
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿Cuál es la finalidad de la realización de la audiencia de conciliación?",
+          "options": [
+            "Intentar llegar a un acuerdo con el proveedor.",
+            "Sancionar económicamente al proveedor de forma directa en el acto.",
+            "Sancionar económicamente al proveedor de forma directa en el acto."
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Si fracasa la instancia conciliatoria el consumidor queda desamparados en sus derechos?",
+          "options": [
+            "No, tiene la posibilidad de iniciar la acción judicial",
+            "Sí, el expediente se archiva y no se pueden realizar más reclamos",
+            "Sí, solo se puede volver a reclamar transcurrido un año calendario."
+          ],
+          "correct": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economia-popular",
+      "name": "Secretaría de Economía Popular",
+      "icon": "🤝",
+      "color": "#FFD60A",
+      "enabled": true,
+      "questions": [
+        {
+          "q": "¿Qué es la economía popular?",
+          "options": [
+            "Actividades productivas de sectores populares y cooperativos",
+            "Solo grandes empresas",
+            "La bolsa de valores"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué es una cooperativa de trabajo?",
+          "options": [
+            "Una organización donde los trabajadores son también dueños",
+            "Una empresa multinacional",
+            "Un banco privado"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué buscan las ferias populares y de la agricultura familiar?",
+          "options": [
+            "Acercar productores y consumidores sin intermediarios",
+            "Aumentar los intermediarios",
+            "Cerrar el comercio local"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué es el trueque?",
+          "options": [
+            "Intercambiar bienes o servicios sin usar dinero",
+            "Un tipo de crédito bancario",
+            "Una multa"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "¿Qué rol cumplen las organizaciones sociales en la economía popular?",
+          "options": [
+            "Organizan y fortalecen emprendimientos comunitarios",
+            "Ninguno",
+            "Solo cobran impuestos"
+          ],
+          "correct": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "proveedores-mineros",
+      "name": "Proveedores Mineros",
+      "icon": "⛏️",
+      "color": "#9D4EDD",
+      "enabled": true,
+      "questions": []
+    }
+  ],
+  "lastSavedAt": 1790079963142
+}
