@@ -386,14 +386,22 @@ const STORAGE_KEY = 'jujuy_trivia_data_v1';
 
 const CONTENT_VERSION = 2;
 
+/* Nombre del JSON publicado junto al HTML (mismo nombre que baja el botón
+   "Exportar preguntas"). Se busca en la misma carpeta, así que funciona sin
+   cambios tanto en GitHub Pages como en cualquier otro hosting. Al abrir el
+   HTML como archivo local (file://) el navegador bloquea este fetch por
+   seguridad, así que ahí el juego sigue funcionando solo con lo guardado en
+   el dispositivo (localStorage), como hasta ahora. */
+const REMOTE_DATA_URL = 'trivia-ministerio-jujuy-datos.json';
+
 const DEFAULT_DATA = {
   version: 1,
   contentVersion: CONTENT_VERSION,
-  pin: "6789",
+  pin: "1234",
   prizeMessage: "¡Mostrá esta pantalla en el stand del Ministerio de Desarrollo Económico y Producción para retirar tu premio sorpresa! 🎁",
   winThreshold: 3,
   timerEnabled: true,
-  timerSeconds: 25,
+  timerSeconds: 20,
   plays: [],
   categories: [
     cat('agencia-comercializacion', 'Agencia de Comercialización', '🛒', '#FF9F1C', [
@@ -558,6 +566,76 @@ function testStorageWritable(){
     localStorage.removeItem(testKey);
     return ok;
   }catch(e){ return false; }
+}
+
+/* ============================================================
+   SINCRONIZACIÓN CON EL JSON PUBLICADO (GitHub Pages u otro hosting)
+   ============================================================
+   Trae trivia-ministerio-jujuy-datos.json de la misma carpeta que el HTML.
+   Si el archivo no existe, no hay internet, o el HTML se abrió como archivo
+   local (file://, donde el navegador bloquea este fetch), se sigue
+   funcionando con lo que ya había en este dispositivo, sin romper nada. */
+let remoteSyncStatus = 'idle'; // idle | ok | error
+async function fetchRemoteData(){
+  try{
+    const res = await fetch(REMOTE_DATA_URL + '?v=' + Date.now(), { cache:'no-store' });
+    if(!res.ok) throw new Error('HTTP ' + res.status);
+    const remote = await res.json();
+    if(!remote || !Array.isArray(remote.categories)) throw new Error('Formato inválido');
+    return remote;
+  }catch(e){
+    console.warn('No se pudo traer el JSON publicado, se sigue usando lo local.', e);
+    return null;
+  }
+}
+function normalizeRemoteCategories(remote){
+  remote.categories.forEach(c=>{
+    (c.questions || []).forEach(qq=>{
+      if(!Array.isArray(qq.correct)) qq.correct = [qq.correct];
+    });
+  });
+}
+function applyRemoteData(remote){
+  normalizeRemoteCategories(remote);
+  // Se toma el contenido (temáticas/preguntas) y la configuración del juego
+  // del JSON publicado. Las estadísticas (plays) quedan como estaban en
+  // este dispositivo: son propias de cada pantalla, no se sincronizan.
+  data.categories = remote.categories;
+  if(typeof remote.pin === 'string') data.pin = remote.pin;
+  if(typeof remote.prizeMessage === 'string') data.prizeMessage = remote.prizeMessage;
+  if(typeof remote.winThreshold === 'number') data.winThreshold = remote.winThreshold;
+  if(typeof remote.timerEnabled === 'boolean') data.timerEnabled = remote.timerEnabled;
+  if(typeof remote.timerSeconds === 'number') data.timerSeconds = remote.timerSeconds;
+  data.contentVersion = CONTENT_VERSION;
+  data.remoteSyncedAt = Date.now();
+  persist();
+}
+async function initRemoteSync(){
+  const remote = await fetchRemoteData();
+  if(remote){
+    applyRemoteData(remote);
+    remoteSyncStatus = 'ok';
+    if(state.screen === 'home') render();
+  } else {
+    remoteSyncStatus = 'error';
+  }
+}
+async function manualSync(){
+  toast('🔄 Buscando la última versión publicada en GitHub...');
+  const remote = await fetchRemoteData();
+  if(remote){
+    applyRemoteData(remote);
+    remoteSyncStatus = 'ok';
+    if(!data.categories.some(c=>c.id===adminActiveTab)){
+      adminActiveTab = data.categories[0] ? data.categories[0].id : null;
+    }
+    render();
+    toast('✅ Contenido actualizado desde el JSON publicado');
+  } else {
+    remoteSyncStatus = 'error';
+    render();
+    toast('⚠️ No se pudo conectar con el JSON publicado (¿hay internet? ¿el archivo se llama igual y está en la misma carpeta?)');
+  }
 }
 
 /* ============================================================
@@ -975,12 +1053,18 @@ function renderAdmin(){
 
     <div class="toolbar">
       <button class="btn btn-primary" onclick="guardarCambiosManual()">💾 Guardar cambios</button>
+      <button class="btn btn-secondary" onclick="manualSync()">🔄 Actualizar desde GitHub</button>
       <button class="btn btn-secondary" onclick="exportJSON()">⬇️ Exportar preguntas (JSON)</button>
       <button class="btn btn-secondary" onclick="document.getElementById('importFile').click()">⬆️ Importar todo (JSON)</button>
       <input type="file" id="importFile" accept="application/json" class="hidden" onchange="importJSON(event)">
       <button class="btn btn-ghost" onclick="resetDefaults()">↺ Restaurar preguntas de ejemplo</button>
     </div>
-    <div class="save-hint" style="margin:-10px 0 16px;">✅ Cada cambio se guarda solo en este dispositivo/navegador. Si vas a abrir una versión nueva del archivo, exportá antes el JSON acá arriba y después importalo en el archivo nuevo — así no perdés lo cargado.</div>
+    <div class="save-hint" style="margin:-10px 0 8px;">
+      ${remoteSyncStatus === 'ok' && data.remoteSyncedAt ? `🌐 Sincronizado con el JSON publicado: <strong>${new Date(data.remoteSyncedAt).toLocaleString('es-AR')}</strong>` : ''}
+      ${remoteSyncStatus === 'error' ? `⚠️ No se encontró/pudo leer <code>${REMOTE_DATA_URL}</code> en esta carpeta (normal si abriste el archivo local, o si todavía no subiste ese JSON a GitHub).` : ''}
+      ${remoteSyncStatus === 'idle' ? `🌐 Buscando el JSON publicado en GitHub...` : ''}
+    </div>
+    <div class="save-hint" style="margin:-4px 0 16px;">✅ Para actualizar el juego en TODOS los dispositivos: editá acá, tocá "⬇️ Exportar preguntas", y subí ese mismo archivo a GitHub (reemplazando <code>${REMOTE_DATA_URL}</code>). Cada dispositivo lo toma solo al abrir la página, o tocando "🔄 Actualizar desde GitHub".</div>
 
     ${renderStatsSection()}
 
@@ -1296,6 +1380,7 @@ function escapeAttr(str){ return escapeHtml(str); }
    INICIO
    ============================================================ */
 render();
+initRemoteSync(); // intenta traer el JSON publicado sin bloquear la pantalla inicial
 </script>
 </body>
 </html>
