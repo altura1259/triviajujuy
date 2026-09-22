@@ -6,7 +6,16 @@
   "winThreshold": 3,
   "timerEnabled": true,
   "timerSeconds": 25,
-  "plays": [],
+  "plays": [
+    {
+      "catId": "defensa-consumidor",
+      "catName": "Defensa del Consumidor",
+      "score": 2,
+      "total": 5,
+      "win": false,
+      "ts": 1790081821218
+    }
+  ],
   "categories": [
     {
       "id": "agencia-comercializacion",
@@ -193,7 +202,7 @@
     },
     {
       "id": "parques-industriales",
-      "name": "Parques Industriales",
+      "name": "Dirección de Industria y Comercio",
       "icon": "🏭",
       "color": "#EF476F",
       "enabled": true,
@@ -232,7 +241,7 @@
           ]
         },
         {
-          "q": ")¿Cuál es la principal función de proveedores mineros?",
+          "q": "¿Cuál es la principal función de proveedores mineros?",
           "options": [
             "La principal función es satisfacer las necesidades de los productores",
             "Un club de fútbol",
@@ -670,5 +679,6 @@
       "questions": []
     }
   ],
-  "lastSavedAt": 1790079963142
+  "lastSavedAt": 1790090428066,
+  "remoteSyncedAt": 1790089917060
 }
