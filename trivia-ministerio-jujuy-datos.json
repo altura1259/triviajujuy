@@ -38,6 +38,38 @@
       "total": 5,
       "win": false,
       "ts": 1790163477204
+    },
+    {
+      "catId": "ley-inversiones",
+      "catName": "Ley de Inversiones",
+      "score": 1,
+      "total": 5,
+      "win": false,
+      "ts": 1790164569289
+    },
+    {
+      "catId": "ley-inversiones",
+      "catName": "Ley de Inversiones",
+      "score": 0,
+      "total": 5,
+      "win": false,
+      "ts": 1790164592352
+    },
+    {
+      "catId": "consejo-microempresa",
+      "catName": "Consejo de la Microempresa",
+      "score": 2,
+      "total": 5,
+      "win": false,
+      "ts": 1790164747933
+    },
+    {
+      "catId": "fogajuy",
+      "catName": "FINANCIAMIENTO",
+      "score": 0,
+      "total": 5,
+      "win": false,
+      "ts": 1790171722719
     }
   ],
   "categories": [
@@ -439,58 +471,58 @@
       "enabled": true,
       "questions": [
         {
-          "q": "Escribí acá la nueva pregunta",
+          "q": "¿En qué provincia se aplica la Ley N° 5922 de Promoción de Inversiones y el Empleo?",
           "options": [
-            "Opción A",
-            "Opción B",
-            "Opción C"
+            "Salta ",
+            "Jujuy",
+            "Cordoba"
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿Cuál de los siguientes rubros está excluido y NO puede recibir los beneficios de la ley?",
+          "options": [
+            "Juegos de azar",
+            "Producción de nuevos bienes",
+            "Innovación tecnológicas"
           ],
           "correct": [
             0
           ]
         },
         {
-          "q": "Escribí acá la nueva pregunta",
+          "q": "¿Cuál es el objetivo principal de esta ley?",
           "options": [
-            "Opción A",
-            "Opción B",
-            "Opción C"
+            "obrar más impuestos a las personas",
+            "Crear empleos y fomentar inversiones",
+            "Cerrar empresas locales"
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿Por cuántos años como máximo se puede obtener la exención del Impuesto Inmobiliario?",
+          "options": [
+            "Hasta 1 año",
+            "Hasta 10 años",
+            "Hasta 50 año"
           ],
           "correct": [
             0
           ]
         },
         {
-          "q": "Escribí acá la nueva pregunta",
+          "q": "¿Qué organismo gubernamental figura en los contactos para este trámite?",
           "options": [
-            "Opción A",
-            "Opción B",
-            "Opción C"
+            "Ministerio de Transporte",
+            "Secretaría de Desarrollo Industrial y Comercial",
+            "Dirección de Deportes"
           ],
           "correct": [
-            0
-          ]
-        },
-        {
-          "q": "Escribí acá la nueva pregunta",
-          "options": [
-            "Opción A",
-            "Opción B",
-            "Opción C"
-          ],
-          "correct": [
-            0
-          ]
-        },
-        {
-          "q": "Escribí acá la nueva pregunta",
-          "options": [
-            "Opción A",
-            "Opción B",
-            "Opción C"
-          ],
-          "correct": [
-            0
+            1
           ]
         }
       ]
@@ -870,6 +902,6 @@
       "questions": []
     }
   ],
-  "remoteSyncedAt": 1790163398794,
-  "lastSavedAt": 1790164256480
+  "remoteSyncedAt": 1790171706546,
+  "lastSavedAt": 1790172252605
 }
