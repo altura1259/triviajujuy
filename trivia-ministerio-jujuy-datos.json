@@ -614,55 +614,110 @@
       "enabled": true,
       "questions": [
         {
-          "q": "¿Qué es la economía popular?",
+          "q": "¿Cuál de las dos Direcciones de la Secretaría de Economía Popular, interviene en la zona Urbana?",
           "options": [
-            "Actividades productivas de sectores populares y cooperativos",
-            "Solo grandes empresas",
-            "La bolsa de valores"
+            "Dirección de DesarrolloEconómico Social.",
+            "x",
+            "x2"
           ],
           "correct": [
             0
           ]
         },
         {
-          "q": "¿Qué es una cooperativa de trabajo?",
+          "q": "2)\t¿Los emprendedores de ganadería es la población de destinataria de la Dirección de Desarrollo Económico Social?",
           "options": [
-            "Una organización donde los trabajadores son también dueños",
-            "Una empresa multinacional",
-            "Un banco privado"
+            "z1",
+            "Dirección de Agricultura Familiar.",
+            "z2"
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿Las cooperativas son parte de la economía popular?",
+          "options": [
+            "x",
+            "Si",
+            "x2"
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿La solidaridades un principio en la economía popular?",
+          "options": [
+            "x2",
+            "Si",
+            "x3"
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿En economía popular la organización es vertical u horizontal?",
+          "options": [
+            "x1",
+            "Horizontal",
+            "x2"
           ],
           "correct": [
             0
           ]
         },
         {
-          "q": "¿Qué buscan las ferias populares y de la agricultura familiar?",
+          "q": "¿La economía popular no respeta el medio ambiente y la biodiversidad?",
           "options": [
-            "Acercar productores y consumidores sin intermediarios",
-            "Aumentar los intermediarios",
-            "Cerrar el comercio local"
+            "Si respeta.",
+            "a",
+            "b"
           ],
           "correct": [
             0
           ]
         },
         {
-          "q": "¿Qué es el trueque?",
+          "q": "¿Para la economia popular, no esimportante la armonía, equilibrio, entre la naturaleza y todos los seresvivos?",
           "options": [
-            "Intercambiar bienes o servicios sin usar dinero",
-            "Un tipo de crédito bancario",
-            "Una multa"
+            "b1",
+            "Si es importante",
+            "b2"
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿La solución de las necesidades es más factible, que se resuelvan de manera asociativa?",
+          "options": [
+            "Si es factible.",
+            "Opción B",
+            "Opción C"
           ],
           "correct": [
             0
           ]
         },
         {
-          "q": "¿Qué rol cumplen las organizaciones sociales en la economía popular?",
+          "q": "9)\t¿La cobertura de los programases a nivel local, provincial, nacional?",
           "options": [
-            "Organizan y fortalecen emprendimientos comunitarios",
-            "Ninguno",
-            "Solo cobran impuestos"
+            "Opción A",
+            "Provincial.",
+            "Opción C"
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿La ubicación del Ministerio de DesarrolloEconómico y Producción, es en Ascazubi N° 290, del B° Campo Verde?",
+          "options": [
+            "Si",
+            "Opción B",
+            "Opción C"
           ],
           "correct": [
             0
@@ -679,6 +734,6 @@
       "questions": []
     }
   ],
-  "lastSavedAt": 1790090428066,
+  "lastSavedAt": 1790092457777,
   "remoteSyncedAt": 1790089917060
 }
