@@ -6,16 +6,7 @@
   "winThreshold": 3,
   "timerEnabled": true,
   "timerSeconds": 25,
-  "plays": [
-    {
-      "catId": "defensa-consumidor",
-      "catName": "Defensa del Consumidor",
-      "score": 2,
-      "total": 5,
-      "win": false,
-      "ts": 1790081821218
-    }
-  ],
+  "plays": [],
   "categories": [
     {
       "id": "agencia-comercializacion",
@@ -413,7 +404,63 @@
       "icon": "📜",
       "color": "#8338EC",
       "enabled": true,
-      "questions": []
+      "questions": [
+        {
+          "q": "Escribí acá la nueva pregunta",
+          "options": [
+            "Opción A",
+            "Opción B",
+            "Opción C"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "Escribí acá la nueva pregunta",
+          "options": [
+            "Opción A",
+            "Opción B",
+            "Opción C"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "Escribí acá la nueva pregunta",
+          "options": [
+            "Opción A",
+            "Opción B",
+            "Opción C"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "Escribí acá la nueva pregunta",
+          "options": [
+            "Opción A",
+            "Opción B",
+            "Opción C"
+          ],
+          "correct": [
+            0
+          ]
+        },
+        {
+          "q": "Escribí acá la nueva pregunta",
+          "options": [
+            "Opción A",
+            "Opción B",
+            "Opción C"
+          ],
+          "correct": [
+            0
+          ]
+        }
+      ]
     },
     {
       "id": "fogajuy",
@@ -614,55 +661,55 @@
       "enabled": true,
       "questions": [
         {
-          "q": "¿Cuál de las dos Direcciones de la Secretaría de Economía Popular, interviene en la zona Urbana?",
+          "q": "¿Cuál de las  Direcciones de la Secretaría de Economía Popular, interviene en la zona Urbana?",
           "options": [
-            "Dirección de DesarrolloEconómico Social.",
-            "x",
-            "x2"
+            "Dirección de Desarrollo Económico Social.",
+            "Dirección de Agricultura Familiar.",
+            "Dirección de Zonas Rurales y Agroindustria."
           ],
           "correct": [
             0
           ]
         },
         {
-          "q": "2)\t¿Los emprendedores de ganadería es la población de destinataria de la Dirección de Desarrollo Económico Social?",
+          "q": "¿Los emprendedores de ganadería es la población destinataria de la Dirección de Desarrollo Económico Social? ",
           "options": [
-            "z1",
+            "Dirección de Comercio Exterior.",
             "Dirección de Agricultura Familiar.",
-            "z2"
+            "Dirección de Obras Públicas."
           ],
           "correct": [
-            1
+            0
           ]
         },
         {
           "q": "¿Las cooperativas son parte de la economía popular?",
           "options": [
-            "x",
-            "Si",
-            "x2"
+            ": No, solo pertenecen al sector bancario tradicional.",
+            "No, son exclusivamente corporaciones privadas ",
+            "Si"
           ],
           "correct": [
-            1
+            2
           ]
         },
         {
-          "q": "¿La solidaridades un principio en la economía popular?",
+          "q": "¿La solidaridad es un principio en la economía popular?",
           "options": [
-            "x2",
-            "Si",
-            "x3"
+            "No, se basa estrictamente en la competencia de mercado ",
+            "No, prioriza el lucro personal por encima de la comunidad",
+            "Si"
           ],
           "correct": [
-            1
+            2
           ]
         },
         {
           "q": "¿En economía popular la organización es vertical u horizontal?",
           "options": [
-            "x1",
             "Horizontal",
-            "x2"
+            "Vertical y jerárquica estricta.",
+            "Centralizada bajo un directorio corporativo."
           ],
           "correct": [
             0
@@ -671,56 +718,56 @@
         {
           "q": "¿La economía popular no respeta el medio ambiente y la biodiversidad?",
           "options": [
-            "Si respeta.",
-            "a",
-            "b"
+            "Opción A",
+            "Opción B",
+            "Opción C"
           ],
           "correct": [
             0
           ]
         },
         {
-          "q": "¿Para la economia popular, no esimportante la armonía, equilibrio, entre la naturaleza y todos los seresvivos?",
+          "q": "¿Para la economía popular, no es importante la armonía, equilibrio, entre la naturaleza y todos los seres vivos?",
           "options": [
-            "b1",
-            "Si es importante",
-            "b2"
+            "Sí respeta. ",
+            "No, fomenta la contaminación intensiva de los suelos.",
+            "No le interesa el cuidado de los recursos naturales."
           ],
           "correct": [
-            1
+            0
           ]
         },
         {
           "q": "¿La solución de las necesidades es más factible, que se resuelvan de manera asociativa?",
           "options": [
-            "Si es factible.",
-            "Opción B",
-            "Opción C"
-          ],
-          "correct": [
-            0
-          ]
-        },
-        {
-          "q": "9)\t¿La cobertura de los programases a nivel local, provincial, nacional?",
-          "options": [
-            "Opción A",
-            "Provincial.",
-            "Opción C"
+            "No, es mejor resolverlas de forma completamente aislada e individual.",
+            " Sí es factible.",
+            "No, la asociación genera mayores conflictos sin beneficios"
           ],
           "correct": [
             1
           ]
         },
         {
-          "q": "¿La ubicación del Ministerio de DesarrolloEconómico y Producción, es en Ascazubi N° 290, del B° Campo Verde?",
+          "q": "¿La cobertura de los programas es a nivel local, provincial, nacional?",
           "options": [
-            "Si",
-            "Opción B",
-            "Opción C"
+            "Únicamente a nivel internacional.",
+            "Exclusivamente de carácter barrial o municipal menor.",
+            "Provincial"
           ],
           "correct": [
-            0
+            2
+          ]
+        },
+        {
+          "q": "¿La ubicación del Ministerio de Desarrollo Económico y Producción, es en Ascazubi N° 290, del B° Campo Verde?",
+          "options": [
+            "Sí",
+            "No, se encuentra en pleno centro administrativo comercial de la capital.",
+            " No, su sede central está en otra provincia del país"
+          ],
+          "correct": [
+            1
           ]
         }
       ]
@@ -734,6 +781,6 @@
       "questions": []
     }
   ],
-  "lastSavedAt": 1790092457777,
-  "remoteSyncedAt": 1790089917060
+  "remoteSyncedAt": 1790161595958,
+  "lastSavedAt": 1790163287063
 }
