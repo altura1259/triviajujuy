@@ -6,7 +6,40 @@
   "winThreshold": 3,
   "timerEnabled": true,
   "timerSeconds": 25,
-  "plays": [],
+  "plays": [
+    {
+      "catId": "economia-popular",
+      "catName": "Secretaría de Economía Popular",
+      "score": 4,
+      "total": 5,
+      "win": true,
+      "ts": 1790163417346
+    },
+    {
+      "catId": "parques-industriales",
+      "catName": "Dirección de Industria y Comercio",
+      "score": 2,
+      "total": 5,
+      "win": false,
+      "ts": 1790163439232
+    },
+    {
+      "catId": "parques-industriales",
+      "catName": "Dirección de Industria y Comercio",
+      "score": 3,
+      "total": 5,
+      "win": true,
+      "ts": 1790163458515
+    },
+    {
+      "catId": "agencia-comercializacion",
+      "catName": "Agencia de Comercialización",
+      "score": 1,
+      "total": 5,
+      "win": false,
+      "ts": 1790163477204
+    }
+  ],
   "categories": [
     {
       "id": "agencia-comercializacion",
@@ -464,11 +497,67 @@
     },
     {
       "id": "fogajuy",
-      "name": "FOGAJUY",
+      "name": "FINANCIAMIENTO",
       "icon": "💰",
       "color": "#FFB703",
       "enabled": true,
-      "questions": []
+      "questions": [
+        {
+          "q": "¿Qué es la tasa de interés?",
+          "options": [
+            "El monto total que se pide prestado",
+            "El costo que se paga por usar dinero prestado, expresado como porcentaje",
+            "La garantía que se entrega al banco"
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿Qué es una garantía en un préstamo?",
+          "options": [
+            "El plazo máximo para pagar",
+            "El número de cuotas mensuales",
+            "Un bien o aval que respalda el pago del préstamo ante un posible incumplimiento"
+          ],
+          "correct": [
+            2
+          ]
+        },
+        {
+          "q": "¿Qué mide el flujo de caja (cash flow) de una empresa?",
+          "options": [
+            "Solo las ganancias contables del año",
+            "El valor de los activos fijos ",
+            "El movimiento real de entradas y salidas de dinero en un período"
+          ],
+          "correct": [
+            2
+          ]
+        },
+        {
+          "q": "¿Qué significa \"amortizar\" un préstamo?",
+          "options": [
+            "Aumentar el monto solicitado",
+            "Ir pagando gradualmente el capital y los intereses de la deuda",
+            "Cancelar el préstamo sin pagarlo"
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿Qué es una línea de crédito?",
+          "options": [
+            "Un monto máximo aprobado que el cliente puede usar y devolver de forma flexible, pagando interés solo por lo usado",
+            "Un préstamo que se cobra una sola vez y no se puede repetir",
+            "Un subsidio no reembolsable del Estado"
+          ],
+          "correct": [
+            0
+          ]
+        }
+      ]
     },
     {
       "id": "consejo-microempresa",
@@ -781,6 +870,6 @@
       "questions": []
     }
   ],
-  "remoteSyncedAt": 1790161595958,
-  "lastSavedAt": 1790163287063
+  "remoteSyncedAt": 1790163398794,
+  "lastSavedAt": 1790164256480
 }
