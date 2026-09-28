@@ -6,72 +6,7 @@
   "winThreshold": 3,
   "timerEnabled": true,
   "timerSeconds": 25,
-  "plays": [
-    {
-      "catId": "economia-popular",
-      "catName": "Secretaría de Economía Popular",
-      "score": 4,
-      "total": 5,
-      "win": true,
-      "ts": 1790163417346
-    },
-    {
-      "catId": "parques-industriales",
-      "catName": "Dirección de Industria y Comercio",
-      "score": 2,
-      "total": 5,
-      "win": false,
-      "ts": 1790163439232
-    },
-    {
-      "catId": "parques-industriales",
-      "catName": "Dirección de Industria y Comercio",
-      "score": 3,
-      "total": 5,
-      "win": true,
-      "ts": 1790163458515
-    },
-    {
-      "catId": "agencia-comercializacion",
-      "catName": "Agencia de Comercialización",
-      "score": 1,
-      "total": 5,
-      "win": false,
-      "ts": 1790163477204
-    },
-    {
-      "catId": "ley-inversiones",
-      "catName": "Ley de Inversiones",
-      "score": 1,
-      "total": 5,
-      "win": false,
-      "ts": 1790164569289
-    },
-    {
-      "catId": "ley-inversiones",
-      "catName": "Ley de Inversiones",
-      "score": 0,
-      "total": 5,
-      "win": false,
-      "ts": 1790164592352
-    },
-    {
-      "catId": "consejo-microempresa",
-      "catName": "Consejo de la Microempresa",
-      "score": 2,
-      "total": 5,
-      "win": false,
-      "ts": 1790164747933
-    },
-    {
-      "catId": "fogajuy",
-      "catName": "FINANCIAMIENTO",
-      "score": 0,
-      "total": 5,
-      "win": false,
-      "ts": 1790171722719
-    }
-  ],
+  "plays": [],
   "categories": [
     {
       "id": "agencia-comercializacion",
@@ -200,58 +135,81 @@
       "enabled": true,
       "questions": [
         {
-          "q": "¿Qué se produce principalmente en una bodega?",
+          "q": "¿Cuál es la uva que más se cultiva en Jujuy?",
           "options": [
-            "Vino",
-            "Cerámica",
-            "Software"
+            "Syrah",
+            "Malbec  ",
+            "Torrontés"
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": " ¿Qué día se celebra el Día Mundial del Malbec?",
+          "options": [
+            "17 de abril ",
+            "25 de mayo",
+            "9 de julio"
           ],
           "correct": [
             0
           ]
         },
         {
-          "q": "¿Cómo se llama la actividad de cultivar vid para producir vino?",
+          "q": "¿A qué altura está el viñedo de Moya, en la Quebrada de Humahuaca?",
           "options": [
-            "Viticultura",
-            "Apicultura",
-            "Avicultura"
+            "1.500 m",
+            "2.300 m",
+            "3.329 m"
+          ],
+          "correct": [
+            2
+          ]
+        },
+        {
+          "q": "¿Dónde está el único viñedo más alto que el de Moya?",
+          "options": [
+            "Bolivia",
+            "Tibet",
+            "Perú"
+          ],
+          "correct": [
+            1
+          ]
+        },
+        {
+          "q": "¿Hasta cuándo puede durar la cosecha de uva en Jujuy?",
+          "options": [
+            "Fines de mayo ",
+            "diciembre",
+            "Enero"
+          ],
+          "correct": [
+            0,
+            1
+          ]
+        },
+        {
+          "q": "¿Qué provincia tiene más Malbec en el país?",
+          "options": [
+            "Mendoza  ",
+            "Salta ",
+            "San Juan"
           ],
           "correct": [
             0
           ]
         },
         {
-          "q": "¿Qué caracteriza a los llamados 'vinos de altura'?",
+          "q": "La gran diferencia de temperatura entre el día y la noche en la Quebrada le da a sus vinos...",
           "options": [
-            "Se cultivan a gran altitud sobre el nivel del mar",
-            "Se guardan en edificios altos",
-            "No llevan uvas"
+            "Menos alcohol",
+            "Mucho color",
+            "Gas natural"
           ],
           "correct": [
-            0
-          ]
-        },
-        {
-          "q": "¿Qué es la vendimia?",
-          "options": [
-            "La cosecha de la uva",
-            "La poda de invierno",
-            "El etiquetado de la botella"
-          ],
-          "correct": [
-            0
-          ]
-        },
-        {
-          "q": "¿Qué factor climático favorece la vitivinicultura de altura en el norte argentino?",
-          "options": [
-            "La amplitud térmica entre el día y la noche",
-            "La humedad constante",
-            "La cercanía al mar"
-          ],
-          "correct": [
-            0
+            1
           ]
         }
       ]
@@ -902,6 +860,6 @@
       "questions": []
     }
   ],
-  "remoteSyncedAt": 1790171706546,
-  "lastSavedAt": 1790172252605
+  "remoteSyncedAt": 1790339773430,
+  "lastSavedAt": 1790350020973
 }
