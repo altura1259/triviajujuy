@@ -795,16 +795,8 @@
           ]
         }
       ]
-    },
-    {
-      "id": "proveedores-mineros",
-      "name": "Proveedores Mineros",
-      "icon": "⛏️",
-      "color": "#9D4EDD",
-      "enabled": true,
-      "questions": []
     }
   ],
-  "remoteSyncedAt": 1791300319912,
-  "lastSavedAt": 1791300809424
+  "remoteSyncedAt": 1791301118189,
+  "lastSavedAt": 1791301165741
 }
