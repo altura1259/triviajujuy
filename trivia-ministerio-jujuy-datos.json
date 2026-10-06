@@ -6,7 +6,24 @@
   "winThreshold": 3,
   "timerEnabled": true,
   "timerSeconds": 25,
-  "plays": [],
+  "plays": [
+    {
+      "catId": "parques-industriales",
+      "catName": "Dirección de Industria y Comercio",
+      "score": 2,
+      "total": 5,
+      "win": false,
+      "ts": 1791300357250
+    },
+    {
+      "catId": "parques-industriales",
+      "catName": "Dirección de Industria y Comercio",
+      "score": 0,
+      "total": 5,
+      "win": false,
+      "ts": 1791300507927
+    }
+  ],
   "categories": [
     {
       "id": "agencia-comercializacion",
@@ -339,78 +356,6 @@
       "icon": "💡",
       "color": "#06D6A0",
       "enabled": true,
-      "questions": [
-        {
-          "q": "¿Qué se busca fortalecer con políticas de innovación y conocimiento?",
-          "options": [
-            "Nuevas capacidades técnicas y tecnológicas",
-            "Solo el turismo",
-            "Nada en particular"
-          ],
-          "correct": [
-            0
-          ]
-        },
-        {
-          "q": "¿Qué es la capacitación laboral?",
-          "options": [
-            "Formación para mejorar habilidades de trabajo",
-            "Un tipo de multa",
-            "Un día feriado"
-          ],
-          "correct": [
-            0
-          ]
-        },
-        {
-          "q": "¿Qué rol cumplen las universidades en el desarrollo productivo?",
-          "options": [
-            "Generan conocimiento e investigación aplicada",
-            "Ninguno",
-            "Solo entregan diplomas"
-          ],
-          "correct": [
-            0
-          ]
-        },
-        {
-          "q": "¿Qué es un polo o parque tecnológico?",
-          "options": [
-            "Un espacio que reúne empresas e instituciones de innovación",
-            "Un tipo de helado",
-            "Una plaza pública"
-          ],
-          "correct": [
-            0
-          ]
-        },
-        {
-          "q": "¿Por qué es importante la transferencia de conocimiento a las empresas?",
-          "options": [
-            "Porque mejora su competitividad",
-            "Porque es solo un trámite",
-            "No es importante"
-          ],
-          "correct": [
-            0
-          ]
-        }
-      ]
-    },
-    {
-      "id": "zona-franca",
-      "name": "Zona Franca",
-      "icon": "🌐",
-      "color": "#118AB2",
-      "enabled": true,
-      "questions": []
-    },
-    {
-      "id": "jemse",
-      "name": "Jemse",
-      "icon": "⚙️",
-      "color": "#E76F51",
-      "enabled": true,
       "questions": []
     },
     {
@@ -453,7 +398,7 @@
         {
           "q": "¿Cuál es el objetivo principal de esta ley?",
           "options": [
-            "obrar más impuestos a las personas",
+            "Cobrar más impuestos a las personas",
             "Crear empleos y fomentar inversiones",
             "Cerrar empresas locales"
           ],
@@ -466,7 +411,7 @@
           "options": [
             "Hasta 1 año",
             "Hasta 10 años",
-            "Hasta 50 año"
+            "Hasta 5 año"
           ],
           "correct": [
             0
@@ -860,6 +805,6 @@
       "questions": []
     }
   ],
-  "remoteSyncedAt": 1790339773430,
-  "lastSavedAt": 1790350020973
+  "remoteSyncedAt": 1791300319912,
+  "lastSavedAt": 1791300809424
 }
