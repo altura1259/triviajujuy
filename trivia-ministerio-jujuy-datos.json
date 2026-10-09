@@ -14,6 +14,14 @@
       "total": 5,
       "win": false,
       "ts": 1791546413581
+    },
+    {
+      "catId": "fogajuy",
+      "catName": "FINANCIAMIENTO",
+      "score": 2,
+      "total": 5,
+      "win": false,
+      "ts": 1791564340728
     }
   ],
   "categories": [
@@ -492,63 +500,7 @@
       "icon": "🛍️",
       "color": "#FB5607",
       "enabled": true,
-      "questions": [
-        {
-          "q": "¿Qué caracteriza a una microempresa?",
-          "options": [
-            "Pocos empleados y facturación reducida",
-            "Miles de empleados",
-            "Cotizar en bolsa"
-          ],
-          "correct": [
-            0
-          ]
-        },
-        {
-          "q": "¿Qué es el monotributo?",
-          "options": [
-            "Un régimen impositivo simplificado para pequeños contribuyentes",
-            "Un tipo de préstamo bancario",
-            "Un día feriado"
-          ],
-          "correct": [
-            0
-          ]
-        },
-        {
-          "q": "¿Qué suele necesitar más una microempresa para crecer?",
-          "options": [
-            "Financiamiento y capacitación",
-            "Solo publicidad en TV",
-            "Nada en especial"
-          ],
-          "correct": [
-            0
-          ]
-        },
-        {
-          "q": "¿Qué significa 'emprendedurismo'?",
-          "options": [
-            "La capacidad de iniciar y desarrollar un proyecto propio",
-            "Un cargo público",
-            "Un tipo de impuesto"
-          ],
-          "correct": [
-            0
-          ]
-        },
-        {
-          "q": "¿Qué es un plan de negocios?",
-          "options": [
-            "Un documento que planifica cómo funcionará un emprendimiento",
-            "Un contrato de alquiler",
-            "Una factura"
-          ],
-          "correct": [
-            0
-          ]
-        }
-      ]
+      "questions": []
     },
     {
       "id": "defensa-consumidor",
@@ -789,6 +741,6 @@
       ]
     }
   ],
-  "remoteSyncedAt": 1791546810258,
-  "lastSavedAt": 1791547777275
+  "remoteSyncedAt": 1791563754985,
+  "lastSavedAt": 1791565047254
 }
