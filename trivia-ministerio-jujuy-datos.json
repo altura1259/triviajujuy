@@ -6,24 +6,7 @@
   "winThreshold": 3,
   "timerEnabled": true,
   "timerSeconds": 25,
-  "plays": [
-    {
-      "catId": "parques-industriales",
-      "catName": "Dirección de Industria y Comercio",
-      "score": 2,
-      "total": 5,
-      "win": false,
-      "ts": 1791300357250
-    },
-    {
-      "catId": "parques-industriales",
-      "catName": "Dirección de Industria y Comercio",
-      "score": 0,
-      "total": 5,
-      "win": false,
-      "ts": 1791300507927
-    }
-  ],
+  "plays": [],
   "categories": [
     {
       "id": "agencia-comercializacion",
@@ -411,10 +394,10 @@
           "options": [
             "Hasta 1 año",
             "Hasta 10 años",
-            "Hasta 5 año"
+            "Hasta 5 años"
           ],
           "correct": [
-            0
+            1
           ]
         },
         {
@@ -797,6 +780,6 @@
       ]
     }
   ],
-  "remoteSyncedAt": 1791301118189,
-  "lastSavedAt": 1791301165741
+  "remoteSyncedAt": 1791544229383,
+  "lastSavedAt": 1791544333880
 }
