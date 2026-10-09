@@ -59,15 +59,15 @@
     letter-spacing:.3px;
     text-shadow: 0 2px 8px rgba(0,0,0,.35);
   }
- .brand-logo-badge{
-  background:transparent;
-  border-radius:0;
-  padding:0;
-  display:flex;
-  align-items:center;
-  box-shadow:none;
-  flex-shrink:0;
-}
+  .brand-logo-badge{
+    background:transparent;
+    border-radius:0;
+    padding:0;
+    display:flex;
+    align-items:center;
+    box-shadow:none;
+    flex-shrink:0;
+  }
   .brand-logo-badge img{
     height:38px;
     width:auto;
@@ -347,6 +347,30 @@
     to{ transform: translateY(110vh) rotate(540deg); opacity:.9; }
   }
 
+
+  /* ---- Bloque QR Instagram (mismo estilo que los botones de temática) ---- */
+  .qr-card{
+    position:relative; overflow:hidden;
+    margin-top:24px; display:flex; align-items:center; justify-content:center; gap:22px;
+    background:linear-gradient(160deg,#3a0ca3,#7209b7); color:#fff;
+    border-radius:18px; padding:20px 24px;
+    box-shadow: 0 8px 0 rgba(0,0,0,.18), 0 14px 24px rgba(0,0,0,.18);
+  }
+  .qr-card::after{
+    content:""; position:absolute; inset:0; pointer-events:none;
+    background:linear-gradient(160deg, rgba(255,255,255,.22), rgba(255,255,255,0) 55%);
+  }
+  .qr-card > *{ position:relative; z-index:1; }
+  .qr-box{ background:#fff; border-radius:14px; padding:10px; flex-shrink:0; line-height:0; box-shadow:0 4px 10px rgba(0,0,0,.25); }
+  .qr-box img, .qr-box .qr-svg{ width:140px; height:140px; display:block; }
+  .qr-text h2{ margin:0 0 6px; font-size:1.7rem; font-weight:800; color:var(--accent); text-shadow:0 2px 8px rgba(0,0,0,.35); }
+  .qr-text p{ margin:0 0 6px; font-size:.95rem; line-height:1.35; font-weight:600; }
+  .qr-text .qr-handle{ font-weight:800; margin:0; }
+  @media (max-width:560px){
+    .qr-card{ flex-direction:column; text-align:center; gap:14px; }
+    .qr-box img, .qr-box .qr-svg{ width:160px; height:160px; }
+  }
+
   footer.foot{ text-align:center; color:#e6dbff; opacity:.7; font-size:.72rem; margin-top:26px; }
 </style>
 </head>
@@ -354,12 +378,12 @@
 
 <div class="wrap">
   <div class="topbar">
-   <div class="brand">
+    <div class="brand">
       <span class="brand-logo-badge"><img src="https://globalsellers.com.ar/wp-content/uploads/2026/10/log-jujuy.png" alt="Gobierno de Jujuy - Ministerio de Desarrollo Económico y Producción"></span>
       <div>
-       
-        <small></small>
-        <small></small>
+        TRIVIA EXPOJUY 2026
+        <small>Ministerio de Desarrollo Económico y Producción</small>
+        <small>Gobierno de Jujuy</small>
       </div>
     </div>
     <div class="top-actions">
@@ -368,7 +392,7 @@
     </div>
   </div>
 
-  <h1 class="title" id="mainTitle">¡Jugá la Trivia EXPOJUY 2026 y demostrá lo que sabés!</h1>
+  <h1 class="title" id="mainTitle">¡Jugá y demostrá lo que sabés!</h1>
   <p class="subtitle" id="mainSubtitle">Elegí una temática, respondé 5 preguntas y ganá tu premio en el stand 🎁</p>
 
   <div class="card" id="app"></div>
@@ -418,7 +442,7 @@ const DEFAULT_DATA = {
       q('¿Qué es la vendimia?', ['La cosecha de la uva', 'La poda de invierno', 'El etiquetado de la botella'], 0),
       q('¿Qué factor climático favorece la vitivinicultura de altura en el norte argentino?', ['La amplitud térmica entre el día y la noche', 'La humedad constante', 'La cercanía al mar'], 0),
     ]),
-    cat('industria-comercio', 'Industria y Comercio', '🏭', '#EF476F', [
+    cat('parques-industriales', 'Parques Industriales', '🏭', '#EF476F', [
       q('¿Qué es un parque industrial?', ['Un predio organizado con infraestructura para instalar industrias', 'Un espacio verde recreativo', 'Un depósito de basura'], 0),
       q('¿Qué es una PyME?', ['Pequeña y Mediana Empresa', 'Un tipo de impuesto', 'Una marca registrada'], 0),
       q('¿Cuál de estos es un ejemplo de industria manufacturera?', ['Textiles y tejidos', 'El clima de la Puna', 'Un cerro'], 0),
@@ -713,6 +737,20 @@ function render(){
   }
 }
 
+/* ---------- BLOQUE QR INSTAGRAM ---------- */
+const QR_IMG_URL = 'https://globalsellers.com.ar/wp-content/uploads/2026/10/qr-code-jujuy.png';
+/* QR de respaldo (se dibuja solo si la imagen de arriba no carga). Apunta a instagram.com/produccionjujuy */
+const QR_FALLBACK_SVG = '<svg viewBox="0 0 29 29" class="qr-svg"><title>QR Instagram @produccionjujuy</title><path stroke="#1a0b3d" d="M0 0.5h7m2 0h2m2 0h3m2 0h2m2 0h7m-29 1h1m5 0h1m2 0h1m3 0h1m1 0h2m5 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m1 0h1m3 0h1m1 0h1m1 0h2m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m1 0h1m2 0h1m3 0h1m3 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m3 0h2m1 0h1m1 0h4m1 0h1m1 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m1 0h1m1 0h2m1 0h1m1 0h5m2 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-20 1h1m1 0h1m2 0h1m2 0h2m1 0h1m-21 1h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h5m2 0h1m1 0h1m1 0h1m-24 1h1m1 0h1m1 0h1m3 0h2m6 0h1m3 0h3m2 0h1m2 0h1m-29 1h1m1 0h2m1 0h2m2 0h2m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m2 0h3m-28 1h4m8 0h4m2 0h3m2 0h2m1 0h2m-28 1h2m2 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h4m1 0h3m2 0h1m1 0h2m-29 1h1m1 0h1m7 0h1m1 0h1m1 0h1m4 0h3m1 0h1m-24 1h2m1 0h1m2 0h2m2 0h1m3 0h1m6 0h1m3 0h4m-29 1h2m2 0h1m3 0h1m3 0h3m2 0h2m2 0h2m2 0h1m1 0h1m-27 1h1m2 0h3m4 0h2m4 0h1m1 0h1m1 0h1m1 0h1m3 0h1m-26 1h2m3 0h1m1 0h3m4 0h1m1 0h1m3 0h2m1 0h1m2 0h1m-29 1h1m3 0h6m1 0h1m2 0h1m3 0h1m3 0h2m3 0h2m-25 1h2m3 0h4m1 0h1m1 0h2m1 0h2m6 0h2m-29 1h1m2 0h5m3 0h3m2 0h1m3 0h5m1 0h1m-19 1h5m3 0h5m3 0h1m1 0h3m-29 1h7m2 0h1m1 0h1m4 0h3m1 0h1m1 0h1m1 0h1m2 0h1m-28 1h1m5 0h1m1 0h1m3 0h2m1 0h2m3 0h1m3 0h5m-29 1h1m1 0h3m1 0h1m2 0h1m1 0h2m1 0h1m2 0h1m2 0h5m-25 1h1m1 0h3m1 0h1m1 0h1m3 0h2m5 0h1m2 0h1m1 0h4m-28 1h1m1 0h3m1 0h1m2 0h1m1 0h2m1 0h1m1 0h1m4 0h1m2 0h3m1 0h1m-29 1h1m5 0h1m5 0h1m1 0h7m3 0h1m2 0h1m-28 1h7m1 0h7m2 0h1m2 0h1m2 0h2m2 0h1"/></svg>';
+const QR_BLOCK = `
+  <div class="qr-card">
+    <div class="qr-box"><img src="${QR_IMG_URL}" alt="QR Instagram @produccionjujuy" onerror="this.onerror=null;this.outerHTML=QR_FALLBACK_SVG"></div>
+    <div class="qr-text">
+      <h2>Participá</h2>
+      <p>¡Jugá y demostrá lo que sabés!<br>Elegí una temática, respondé 5 preguntas y ganá tu premio en el stand 🎁</p>
+      <p class="qr-handle">Escaneá el QR y seguinos en nuestras redes.</p>
+    </div>
+  </div>`;
+
 /* ---------- HOME ---------- */
 function renderHome(){
   const cards = data.categories.map(c=>{
@@ -728,7 +766,7 @@ function renderHome(){
         ${disabled ? '<span style="font-size:.68rem;font-weight:600;opacity:.85;">Próximamente</span>' : ''}
       </button>`;
   }).join('');
-  return `<div class="grid">${cards}</div>`;
+  return `<div class="grid">${cards}</div>` + QR_BLOCK;
 }
 
 function openCategory(id){
