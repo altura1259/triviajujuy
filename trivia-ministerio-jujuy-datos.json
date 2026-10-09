@@ -6,7 +6,16 @@
   "winThreshold": 3,
   "timerEnabled": true,
   "timerSeconds": 25,
-  "plays": [],
+  "plays": [
+    {
+      "catId": "ley-inversiones",
+      "catName": "Ley de Inversiones",
+      "score": 1,
+      "total": 5,
+      "win": false,
+      "ts": 1791546413581
+    }
+  ],
   "categories": [
     {
       "id": "agencia-comercializacion",
@@ -397,7 +406,7 @@
             "Hasta 5 años"
           ],
           "correct": [
-            1
+            2
           ]
         },
         {
@@ -780,6 +789,6 @@
       ]
     }
   ],
-  "remoteSyncedAt": 1791544229383,
-  "lastSavedAt": 1791544333880
+  "remoteSyncedAt": 1791546810258,
+  "lastSavedAt": 1791547777275
 }
