@@ -408,6 +408,8 @@
 const STORAGE_KEY = 'jujuy_trivia_data_v1';
 
 const CONTENT_VERSION = 2;
+/* Segundos por pregunta: FIJO para todas las PCs (ignora lo guardado en el navegador y en el JSON). Cambiá este número si querés otro valor. */
+const FIXED_TIMER_SECONDS = 45;
 
 /* Nombre del JSON publicado junto al HTML (mismo nombre que baja el botón
    "Exportar preguntas"). Se busca en la misma carpeta, así que funciona sin
@@ -861,7 +863,7 @@ function renderGame(){
 function startQuestionTimer(){
   clearInterval(state.timer);
   if(!data.timerEnabled) return;
-  state.timeLeft = data.timerSeconds || 20;
+  state.timeLeft = FIXED_TIMER_SECONDS;
   const fill = document.getElementById('timerFill');
   if(!fill) return;
   fill.style.transition = `width ${state.timeLeft}s linear`;
@@ -1126,7 +1128,8 @@ function renderAdmin(){
         </div>
         <div class="field-row">
           <label>Segundos por pregunta</label>
-          <input type="number" min="5" max="60" value="${data.timerSeconds}" oninput="data.timerSeconds=Math.max(5,Math.min(60,parseInt(this.value)||20)); persist();">
+          <input type="number" value="${FIXED_TIMER_SECONDS}" disabled title="Valor fijo definido en el código (FIXED_TIMER_SECONDS)">
+          <small style="color:var(--muted);">Fijo en ${FIXED_TIMER_SECONDS} s (se cambia en el código).</small>
         </div>
       </div>
 
